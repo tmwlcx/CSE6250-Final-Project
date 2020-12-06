@@ -10,7 +10,8 @@ This repository contains programs in two languages: *Apache Spark* and *Python*.
   * EMG
  
 ***
->The folder structure is as follows:
+The folder structure is as follows:
+
 LearningFromSleepData/
 |-- Demo Notebook.ipynb
 |-- python
@@ -61,7 +62,8 @@ LearningFromSleepData/
                             `-- main
                                 `-- Main.scala
 
-17 directories, 31 files                          
+17 directories, 31 files  
+
 ***
 
 **Note:** Before you run either program, you must put the polysomnogram data (.edf files) in the ./scala/data _AND_ the data must have EEG, EMG, and ECG signals present. 
