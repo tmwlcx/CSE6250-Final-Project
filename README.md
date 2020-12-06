@@ -10,6 +10,8 @@ This repository contains programs in two languages: *Apache Spark* and *Python*.
   * EMG
  
 ***
+>
+```
 The folder structure is as follows:
 LearningFromSleepData/
 |-- Demo Notebook.ipynb
@@ -62,7 +64,7 @@ LearningFromSleepData/
                                 `-- Main.scala
 
 17 directories, 31 files
-
+```
 
 ***
 
