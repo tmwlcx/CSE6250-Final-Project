@@ -74,29 +74,29 @@ the local path to the output of the Spark dataframe
 >`self`
   
 **Attributes**
->`X` \[numpy.ndarray\[numpy.float64\]\]: 
+>`X` \[numpy.ndarray\[numpy.float64\]\]: *(number of patients, number of signals * resolution of each signal)* 
 
-*(number of patients, number of signals * resolution of each signal)* The feature vector. Each row represents one patient and each column contains the PSD estimate for one frequency bin of the periodogram for each of three signals. X\[0:250\] represents the EEG periodogram, X\[250:500\] represents the ECG periodogram, and X\[500:750\] represents the EMG periodogram.
+The feature vector. Each row represents one patient and each column contains the PSD estimate for one frequency bin of the periodogram for each of three signals. X\[0:250\] represents the EEG periodogram, X\[250:500\] represents the ECG periodogram, and X\[500:750\] represents the EMG periodogram.
 
->`y` \[numpy.ndarray\[numpy.int\]\]:
+>`y` \[numpy.ndarray\[numpy.int\]\]: *(number of patients,)* 
 
-*(number of patients,)* The labels. `y==1`: CVD positive. 
+The labels. `y==1`: CVD positive. 
 
->`X_train` \[numpy.ndarray\[numpy.float64\]\]: 
+>`X_train` \[numpy.ndarray\[numpy.float64\]\]: *(number of patients, number of signals * resolution of each signal)* 
 
-*(number of patients, number of signals * resolution of each signal)* The training set portion of the feature vector. 
+The training set portion of the feature vector. 
 
->`y_train` \[numpy.ndarray\[numpy.int\]\]:
+>`y_train` \[numpy.ndarray\[numpy.int\]\]: *(number of patients,)* 
 
-*(number of patients,)* The training set labels. `y==1`: CVD positive. 
+The training set labels. `y==1`: CVD positive. 
 
->`X_test` \[numpy.ndarray\[numpy.float64\]\]: 
+>`X_test` \[numpy.ndarray\[numpy.float64\]\]: *(number of patients, number of signals * resolution of each signal)* 
 
-*(number of patients, number of signals * resolution of each signal)* The validation set portion of the feature vector. 
+The validation set portion of the feature vector. 
 
->`y_test` \[numpy.ndarray\[numpy.int\]\]:
+>`y_test` \[numpy.ndarray\[numpy.int\]\]: *(number of patients,)* 
 
-*(number of patients,)* The validation set labels. `y==1`: CVD positive. 
+The validation set labels. `y==1`: CVD positive. 
 
 >**Methods**
 >
@@ -105,6 +105,14 @@ the local path to the output of the Spark dataframe
 >Uses a logisitic regression classifier with cross-validation (from [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html?highlight=logist%20cv#sklearn.linear_model.LogisticRegressionCV)) to classify the patients and applies a class_weight to each class, if desired. 
 >
 >**Returns**
+>
+>>`self`
+>
+>**Attributes**
+>
+>>`clf`: \[sklearn.linear_model._logistic.LogisticRegressionCV\]
+>>
+>>The logistic regression classifier
 
 
 
