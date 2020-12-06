@@ -11,33 +11,57 @@ This repository contains programs in two languages: *Apache Spark* and *Python*.
  
 ***
 >The folder structure is as follows:
- LearningFromSleepData/
-├── Demo Notebook.ipynb
-├── python
-│   ├── CVD_Diagnosis.py
-│   └── cvd_outcomes
-│       └── shhs-cvd-summary-dataset-0.15.0.csv
-└── scala
-    ├── build.sbt
-    ├── data
-    ├── sbt
-    │   ├── sbt
-    │   └── sbt-launch.jar
-    └── src
-        └── main
-            ├── resources
-            │   ├── log4j.properties
-            │   └── logback.xml
-            └── scala
-                └── edu
-                    └── gatech
-                        └── cse6250
-                            ├── EDFOps
-                            │   └── EDFOps.scala
-                            ├── helper
-                            │   └── SparkHelper.scala
-                            └── main
-                                └── Main.scala                            
+LearningFromSleepData/
+|-- Demo Notebook.ipynb
+|-- python
+|   |-- CM_val_balanced_weights.jpeg
+|   |-- CM_val_favor_CVD.jpeg
+|   |-- CM_val.jpeg
+|   |-- CM_val_no_weight.jpeg
+|   |-- CM_val_no_weights.jpeg
+|   |-- CM_val.png
+|   |-- comp_times.jpeg
+|   |-- CVD_Diagnosis.py
+|   |-- cvd_outcomes
+|   |   `-- shhs-cvd-summary-dataset-0.15.0.csv
+|   |-- distplot.jpeg
+|   |-- dist_plot.png
+|   |-- feature_vector_offset.jpeg
+|   |-- FeatureVectorOffset.jpg
+|   |-- feature_vector_offset.png
+|   |-- makePythonGreatAgain.ipynb
+|   |-- __pycache__
+|   |   `-- CVD_Diagnosis.cpython-38.pyc
+|   |-- readme.md
+|   |-- ROC_val.png
+|   |-- Thumbs.db
+|   `-- Untitled.ipynb
+`-- scala
+    |-- build.sbt
+    |-- data
+    |-- project
+    |   |-- build.properties
+    |   `-- plugins.sbt
+    |-- sbt
+    |   |-- sbt
+    |   `-- sbt-launch.jar
+    `-- src
+        `-- main
+            |-- resources
+            |   |-- log4j.properties
+            |   `-- logback.xml
+            `-- scala
+                `-- edu
+                    `-- gatech
+                        `-- cse6250
+                            |-- EDFOps
+                            |   `-- EDFOps.scala
+                            |-- helper
+                            |   `-- SparkHelper.scala
+                            `-- main
+                                `-- Main.scala
+
+17 directories, 31 files                          
 ***
 
 **Note:** Before you run either program, you must put the polysomnogram data (.edf files) in the ./scala/data _AND_ the data must have EEG, EMG, and ECG signals present. 
