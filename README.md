@@ -11,7 +11,6 @@ This repository contains programs in two languages: *Apache Spark* and *Python*.
  
 ***
 The folder structure is as follows:
-
 LearningFromSleepData/
 |-- Demo Notebook.ipynb
 |-- python
@@ -62,7 +61,8 @@ LearningFromSleepData/
                             `-- main
                                 `-- Main.scala
 
-17 directories, 31 files  
+17 directories, 31 files
+
 
 ***
 
