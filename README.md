@@ -10,34 +10,14 @@ This repository contains programs in two languages: *Apache Spark* and *Python*.
   * EMG
  
 ***
->
+>Folder structure as follows:
 ```
-The folder structure is as follows:
 LearningFromSleepData/
 |-- Demo Notebook.ipynb
 |-- python
-|   |-- CM_val_balanced_weights.jpeg
-|   |-- CM_val_favor_CVD.jpeg
-|   |-- CM_val.jpeg
-|   |-- CM_val_no_weight.jpeg
-|   |-- CM_val_no_weights.jpeg
-|   |-- CM_val.png
-|   |-- comp_times.jpeg
 |   |-- CVD_Diagnosis.py
-|   |-- cvd_outcomes
-|   |   `-- shhs-cvd-summary-dataset-0.15.0.csv
-|   |-- distplot.jpeg
-|   |-- dist_plot.png
-|   |-- feature_vector_offset.jpeg
-|   |-- FeatureVectorOffset.jpg
-|   |-- feature_vector_offset.png
-|   |-- makePythonGreatAgain.ipynb
-|   |-- __pycache__
-|   |   `-- CVD_Diagnosis.cpython-38.pyc
-|   |-- readme.md
-|   |-- ROC_val.png
-|   |-- Thumbs.db
-|   `-- Untitled.ipynb
+|   `-- cvd_outcomes
+|       `-- shhs-cvd-summary-dataset-0.15.0.csv
 `-- scala
     |-- build.sbt
     |-- data
@@ -62,6 +42,8 @@ LearningFromSleepData/
                             |   `-- SparkHelper.scala
                             `-- main
                                 `-- Main.scala
+
+16 directories, 13 files
 
 17 directories, 31 files
 ```
