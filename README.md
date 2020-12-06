@@ -99,11 +99,11 @@ the local path to the output of the Spark dataframe
 *(number of patients,)* The validation set labels. `y==1`: CVD positive. 
 
 >**Methods**
-
+>
 >classify_patients(*class_weights=None, n_splits=100*)
-
+>
 >Uses a logisitic regression classifier with cross-validation (from [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html?highlight=logist%20cv#sklearn.linear_model.LogisticRegressionCV)) to classify the patients and applies a class_weight to each class, if desired. 
-
+>
 >**Returns**
 
 
