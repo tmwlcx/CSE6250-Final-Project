@@ -100,10 +100,10 @@ The validation set portion of the feature vector.
 
 The validation set labels. `y==1`: CVD positive. 
 
->**Methods**
->
->classify_patients(*class_weights=None, n_splits=100*)
->
+**Methods**
+
+classify_patients(*class_weights=None, n_splits=100*)
+
 >Uses a logisitic regression classifier with cross-validation (from [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html?highlight=logist%20cv#sklearn.linear_model.LogisticRegressionCV)) to classify the patients and applies a class_weight to each class, if desired. 
 >
 >**Parameters**
@@ -126,6 +126,17 @@ The validation set labels. `y==1`: CVD positive.
 >>`clf`: \[sklearn.linear_model._logistic.LogisticRegressionCV\]
 >>
 >>The logistic regression classifier
+
+show_graphics(*validation_set='test'*)
+
+>Prints the confusion matrix and ROC AUC plots for the given classifier.
+>
+>**Parameters**
+>>
+>>`validation_set`: \[String\]
+>>
+>`"train"` to display the confusion matrix and ROC AUC plots for the training data, `"test"` to display the confusion matrix and ROC AUC plots for the training data.
+
 
 
 
