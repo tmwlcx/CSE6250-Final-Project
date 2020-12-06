@@ -65,7 +65,9 @@ You may choose to run the CVD_Diagnosis.py file on its own or through a Jupyter 
 
 *class* CVD_Diagnosis (*path*)
   The main class for classifying data from the spark output dataframe.
+  
 **Parameter**
+
 >`path` \[String\] : 
 
 the local path to the output of the Spark dataframe
@@ -103,6 +105,17 @@ The validation set labels. `y==1`: CVD positive.
 >classify_patients(*class_weights=None, n_splits=100*)
 >
 >Uses a logisitic regression classifier with cross-validation (from [scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html?highlight=logist%20cv#sklearn.linear_model.LogisticRegressionCV)) to classify the patients and applies a class_weight to each class, if desired. 
+>
+>**Parameters**
+>>
+>>`class_weights`: \[String\]
+>>
+>`"None"` for unweighted classes, `"balanced"` for balanced class weights, or `"favor_CVD"` for class weights that favor a positive diagnosis.
+>>
+>>`n_splits`: \[Int\]
+>>
+>The number of cross-validation folds to perform. Default is 100. 
+>
 >
 >**Returns**
 >
