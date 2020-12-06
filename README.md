@@ -85,15 +85,16 @@ You may choose to run the CVD_Diagnosis.py file on its own or through a Jupyter 
 
 *class* CVD_Diagnosis (*path*)
   The main class for classifying data from the spark output dataframe.
-  **Parameter**
->`path` \[String\] : the local path to the output of the Spark dataframe
+**Parameter**
+>`path` 
+\[String\] : the local path to the output of the Spark dataframe
   
 **Returns**
 >`self`
   
 **Attributes**
-`X` \[numpy.ndarray\[numpy.float64\]\]: 
->The feature vector. Each row represents one patient and each column contains the PSD estimate for one frequency bin of the periodogram for each of three signals. X[0:250] represents the EEG periodogram, X[250:500] represents the ECG periodogram, and X[500:750] represents the EMG periodogram.
+>`X` \[numpy.ndarray\[numpy.float64\]\]: 
+The feature vector. Each row represents one patient and each column contains the PSD estimate for one frequency bin of the periodogram for each of three signals. X[0:250] represents the EEG periodogram, X[250:500] represents the ECG periodogram, and X[500:750] represents the EMG periodogram.
 
   
 
