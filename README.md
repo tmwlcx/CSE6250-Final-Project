@@ -48,7 +48,7 @@ LearningFromSleepData/
 
 ***
 
-**Note:** Before you run either program, you must put the polysomnogram data (.edf files) in the ./scala/data _AND_ the data must have EEG, EMG, and ECG signals present. 
+**Note:** Before you run either program, you must put the polysomnogram data (.edf files) in the ./scala/data folder _AND_ the data must have EEG, EMG, and ECG signals present. 
 
 ## 1. Feature Engineering with Apache Spark
 Open a terminal in the root directory and run the following:
