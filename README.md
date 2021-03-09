@@ -4,7 +4,10 @@ Team 24: Tim Wilcox
 
 
 ## Introduction
-This repository contains programs in two languages: *Apache Spark* and *Python*. The Spark program processes **.edf** files into spectral density estimates of the following waveforms:
+
+For a video of this project in action click [here](https://www.youtube.com/watch?v=xbVMVc72gEg)!
+
+This repository contains programs in two languages: *Apache Spark* and *Python*. The Spark program processes [**.edf**](https://www.edfplus.info/) files into spectral density estimates of the following waveforms:
   * EEG
   * ECG
   * EMG
